@@ -12,4 +12,9 @@ module.exports = {
     enable: true,
     package: 'egg-cors',
   },
+  // 数据库插件
+  sequelize: {
+    enable: true,
+    package: 'egg-sequelize',
+  },
 };
