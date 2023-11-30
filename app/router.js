@@ -8,5 +8,8 @@ module.exports = app => {
   router.get('/', controller.home.index);
 
   // 获取列表
-  router.get('/list', controller.home.list);
+  router.get('/user/info', controller.home.userInfo);
+
+  // 获取列表
+  router.post('/user/create', controller.home.userCreate);
 };

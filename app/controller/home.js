@@ -11,7 +11,16 @@ class HomeController extends Controller {
   /*
    *获取列表
    */
-  async list() {
+  async userInfo() {
+    const { ctx } = this;
+    ctx.body = {
+      msg: 'success',
+      data: [{ name: 'like', age: 20 }],
+    };
+  }
+
+  async userCreate() {
+    console.log('create');
     const { ctx } = this;
     ctx.body = {
       msg: 'success',
